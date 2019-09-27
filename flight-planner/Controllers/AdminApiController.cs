@@ -53,8 +53,8 @@ namespace flight_planner.Controllers
         private bool IsGoodAirports(AirportRequest to, AirportRequest from)
         {
             return to.City.ToUpper() != from.City.ToUpper() &&
-                   to.Airport.ToUpper() != from.Airport.ToUpper() &&
-                   to.Country.ToUpper() != from.Country.ToUpper();
+                   to.Airport.ToUpper() != from.Airport.ToUpper();
+                   //to.Country.ToUpper() != from.Country.ToUpper();
         }
 
         private bool IsValidAirport(AirportRequest airport)
